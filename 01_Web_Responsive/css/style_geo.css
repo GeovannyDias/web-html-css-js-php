@@ -1,0 +1,198 @@
+/*
+//Selectora avanzado // solo las clases que comiencen con "icon-"
+[class*="icon-"]::before {
+    color: red;
+}
+*/
+
+/* ******************** Estilos a toda la Pagina ******************** */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.destino img{
+    max-width: 85%;
+}
+
+.logo{
+    width: 250px;
+    /* height: 50px; */
+}
+
+/* ******************** Estilos en el Header ******************** */
+.header .contenedor{
+    display: flex;
+    justify-content: space-between; /*si queremos que el icono munu este al fondo*/
+}
+
+.logo, .icon-menu{
+    margin: 5px;
+    color: #164B77;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 5px;
+}
+
+/* ******************** Estilos en el NAV -- menu ******************** */
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    z-index: 100; /*esten por encima de todo*/
+    transition: all 0.5s; /*transicion del m¿menu desplegable*/
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    color: #164B77;
+    height: 60px;
+    border-bottom: 1px solid #164B77;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; /*Quitar Subrrayado de Hipervinculo*/
+}
+
+.menu__link:hover{
+    background: #164B77;
+    color: #ffffff;
+
+}
+
+/* ************* Clase creada en JavaScript ***************** */
+.muestrate{
+    left: 0;
+}
+
+/* ****************** Estilos Banner ********************** */
+
+.banner img{
+    width: 100%;
+    /* height: 500px;  */
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+}
+
+#btn-prev, #btn-next{
+    width: 40px;
+    height: 40px;
+    background: rgba(98, 199, 231, 0.5);
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+    color: #ffffff;
+    display: none;
+}
+
+#btn-prev:hover, #btn-next:hover{
+    background: rgba(98, 199, 231, 0.9);
+}
+
+#btn-prev{
+    left: 10px;
+}
+
+#btn-next{
+    right: 10px;
+}
+
+/* ****************** Banner Description ********************** */
+.banner__description{
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.banner__description h1{
+    font-size: 30px;
+}
+
+.banner__description p{
+    font-size: 10px;
+    display: none;
+}
+
+.slider__txt2{
+    background: rgba(98, 199, 231, 0.7);
+    width: 100%;position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    text-align: justify;
+    display: none;
+}
+
+/* ****************** Banner del Destino ********************** */
+
+.destino__titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.destino__txt{
+    text-align: justify;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.destino img{
+    width: 100%;
+    border-radius: 50%;
+    margin: 24px;
+}
+.destino__columna{
+    position: relative;
+}
+
+.destino__columna h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.destino .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destino__columna:hover .destino__img{
+    box-shadow: 0 0 0 8px #ffffff, 0 15px 200px;
+    transform: scale(1.1);
+}
