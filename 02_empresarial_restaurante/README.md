@@ -40,5 +40,6 @@ Learn how to create a sticky element with CSS.
 
 # Web Completed
 
+![image](https://user-images.githubusercontent.com/23192401/113468914-e78a8500-940e-11eb-9731-9f40b167aa26.png)
 
 
