@@ -38,6 +38,23 @@ Dependiendo de dónde agregues el código JavaScript en tu archivo HTML, la carg
 Learn how to create a sticky element with CSS.
 ```
 
+# Google Map Generator (No API needed)
+* https://google-map-generator.com/*
+
+```
+
+https://maps.google.com/?ll=LONGITUD,LATITUD&z=ZOOM&output=embed
+
+Crear un Mapa
+https://www.mapsdirections.info/crear-un-mapa-de-google/
+
+Buscar Coordenadas GPS
+https://www.mapsdirections.info/coordenadas-de-googlemaps.html
+
+
+```
+
+
 # Web Completed
 
 ![image](https://user-images.githubusercontent.com/23192401/113468914-e78a8500-940e-11eb-9731-9f40b167aa26.png)

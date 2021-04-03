@@ -407,6 +407,45 @@ section {
     text-decoration: none;
 }
 
+/* WHATSAPP BUTTON */
+
+.whatsapp-content {
+    background-color: #38a32f;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 10;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 10px;
+    padding: 11px;
+    transition: ease 0.3s;
+    animation: efecto-whatsapp 1.2s infinite;
+
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-content:hover {
+    transform: scale(1.1); /*Realce*/
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.whatsapp-content .img-whatsapp {
+    width: 100%;
+    transition: ease 1s;
+}
+
+@keyframes efecto-whatsapp {
+    /* valores en porcentaje */
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 150, 0, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 991px) {

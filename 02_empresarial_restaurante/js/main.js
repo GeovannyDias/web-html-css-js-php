@@ -24,3 +24,7 @@ function toggleMenu() {
     menuToggle.classList.toggle("active");
     navigation.classList.toggle("active");
 }
+
+
+// Evento click
+const iconMenu = document.getElementById("icon-menu");
