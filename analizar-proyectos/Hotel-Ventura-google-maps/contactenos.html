@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hotel Ventura</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 62em)">
+</head>
+
+<body>
+
+    <header class="color-3">
+        <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
+        <input class="hidden" type="checkbox" id="btn-menu">
+        <label for="btn-menu"><a class="ic_menu"></a></label>
+        <nav class="menu color-3">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <div class="wrap-login">
+            <a class="ic_login btn-abrir-popup" id="btn-abrir-login"></a>
+            <label class="only-desktop" id="lbl-iniciar-sesion">Iniciar Sesión o Regístrate</label>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <section class="contact">
+            <div class="wrap">
+                <h2 class="title">Contáctenos</h2>
+                <form action="" method="post">
+                    <div class="columns">
+                        <div class="column-1">
+                            <label>Nombres y Apellidos</label>
+                            <input required type="text" name="nombre">
+                            <label>Correo electrónico</label>
+                            <input required type="email" name="correo">
+                        </div>
+                        <div class="column-1">
+                            <label>Teléfono</label>
+                            <input required type="number" name="telefono">
+
+                            <label>Asunto</label>
+                            <input required type="tel" name="asunto">
+                        </div>
+                    </div>
+                    <label>Mensaje</label>
+                    <textarea required name="mensaje" id="" cols="30" rows="5"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+
+        <div class="datos columns">
+            <div class="block column-4">
+                <label for="">Dirección</label>
+                <label for="">Av. Gerundios 178, San Luis.</label>
+            </div>
+            <div class="block column-4">
+                <label for="">Teléfono</label>
+                <label for="">307-4521</label>
+            </div>
+            <div class="block column-4">
+                <label for="">Fax</label>
+                <label for="">309-7434</label>
+            </div>
+            <div class="block column-4">
+                <label for="">E-mail</label>
+                <label for="">contacto@hotelventura.com</label>
+            </div>
+        </div>
+
+        <!----------------------LOGIN ------------------------------>
+        <div class="overlay" id="overlay-login">
+            <div class="popup" id="popup-login">
+                <div class="login">
+                    <div class="pestanas">
+                        <div class="lbl-menu color-4 text-white">
+                            <label class="pestana text-gray active">INGRESAR</label>
+                            <label class="pestana text-gray">REGISTRAR</label>
+                            <a id="btn-cerrar-login" class="btn-cerrar-popup" href="#">X</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="tab1 tab color-4 active">
+                            <form action="" method="post">
+                                <h3 class="text-white">Bienvenido</h3>
+                                <input class="input-login" type="text" placeholder="Usuario" required>
+                                <input class="input-login" type="password" placeholder="Contraseña" required>
+                                <input class="btn-login color-4 text-white" type="submit" value="INGRESAR">
+                                <div class="container-redirect-registrar redirect">
+                                    <label class="text-gray">¿Aún no te haz registrado?</label>
+                                    <label class="lbl-registro-redirect text-white redirect" id="crear-cuenta">Crea una
+                                        cuenta</label>
+                                </div>
+                                <label class="lbl-contrasena-redirect text-white redirect"
+                                    id="lbl-contrasena-redirect">¿Olvidaste tu
+                                    contraseña?</label>
+                            </form>
+                        </div>
+                        <div class="tab2 tab color-4 text-white">
+                            <form action="" method="post">
+                                <h3 class="text-white">Registrate</h3>
+                                <input class="input-login" type="text" placeholder="Usuario" required>
+                                <input class="input-login" type="email" placeholder="Correo" required>
+                                <input class="input-login" type="password" placeholder="Contraseña" required>
+                                <input class="btn-login color-4 text-white" type="submit" value="Enviar">
+                                <label class="text-gray">¿Ya tienes una cuenta?</label>
+                                <label class="text-white redirect" id="lbl-ingresar">Ingresar</label>
+                            </form>
+                        </div>
+                        <div class="tab3 tab color-4 text-white">
+                            <form action="" method="post">
+                                <h3>¿Olvidaste tu contraseña?</h3>
+                                <label class="text-gray">Te enviaremos un correo para restablecer tu contraseña</label>
+                                <input class="input-login" type="email" placeholder="Correo" required>
+                                <input class="btn-login color-4 text-white" type="submit" value="Enviar">
+                                <label class="text-white redirect" id="lbl-regresar">Regresar a Login</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <section class="wrap wrap-footer">
+                <label class="info">Hotel Ventura | Todos los derechos reservados</label>
+                <a class="creator" href="http://giovannicancho.com/">Desarrollado por Giovanni Cancho</a>
+            </section>
+        </footer>
+    </div>
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>
