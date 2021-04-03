@@ -486,7 +486,7 @@ section {
         position: relative;
         width: 40px;
         height: 40px;
-        background: url("../images/menu.png");
+        background: url("../images/icons/menu.png");
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
@@ -495,7 +495,7 @@ section {
 
     /* active - *.js */
     .menuToggle.active {
-        background: url("../images/close.png");
+        background: url("../images/icons/close.png");
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;

@@ -27,4 +27,10 @@ function toggleMenu() {
 
 
 // Evento click
-const iconMenu = document.getElementById("icon-menu");
+// const menuT = document.getElementById("menuToggle");
+// const menuT = document.querySelector(".menuToggle");
+
+// menuT.addEventListener('click', ()=> {
+//     alert('Menu toggle');
+//     menuT.classList.toggle("active");
+// });
