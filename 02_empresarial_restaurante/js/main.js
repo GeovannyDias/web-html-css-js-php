@@ -61,5 +61,12 @@ window.onscroll = () => {
 
 
 
-
+// Funcion Autoivocada
+// (()=> {})()
+// (async () => {
+//     conts { value: pais } = await Swal.fire({});
+//     if (pais) {
+//         // Code
+//     }
+// })()
 
