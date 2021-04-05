@@ -389,6 +389,35 @@ section {
     cursor: pointer;
 }
 
+/* BUTTON UP */
+.button-up {
+    width: 55px;
+    height: 55px;
+    background: rgba(1, 1, 1, 0.80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */ /*Si es icon*/
+    border-radius: 50%;
+    /* font-size: 20px; */ /*Si es icon*/
+    position: fixed;
+    bottom: 45px;
+    right: 20px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+.button-up img {
+    filter: invert(1);
+}
+
+.button-up:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
 /* COPYRIGHT */
 
 .copyrightText {

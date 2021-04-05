@@ -26,6 +26,30 @@ function toggleMenu() {
 }
 
 
+// SCROLL UP
+const buttonUp = document.getElementById('button-up');
+buttonUp.addEventListener('click', scrollUp);
+
+function scrollUp() {
+    const currentScroll = document.documentElement.scrollTop;
+    if (currentScroll > 0) { // 674
+        // window.requestAnimationFrame(scrollUp);  // currentScroll - (currentScroll / 10)
+        window.scrollTo(0, 0); // (x,y)
+    }
+}
+
+window.onscroll = () => {
+    const scroll = document.documentElement.scrollTop;
+    if (scroll > 590) {
+        buttonUp.style.transform = "scale(1)";
+    } else {
+        buttonUp.style.transform = "scale(0)";
+    }
+}
+
+
+
+
 // Evento click
 // const menuT = document.getElementById("menuToggle");
 // const menuT = document.querySelector(".menuToggle");
@@ -34,3 +58,8 @@ function toggleMenu() {
 //     alert('Menu toggle');
 //     menuT.classList.toggle("active");
 // });
+
+
+
+
+
