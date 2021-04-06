@@ -13,6 +13,8 @@ Font:
 https://fonts.google.com/specimen/Poppins?preview.text=poppins&preview.text_type=custom&query=poppins#standard-styles
 Select: 200;300;400;500;600;700;800;900
 
+
+
 ```
 # Cómo Insertar JavaScript en HTML
 
@@ -58,5 +60,6 @@ https://www.mapsdirections.info/coordenadas-de-googlemaps.html
 # Web Completed
 
 ![image](https://user-images.githubusercontent.com/23192401/113468914-e78a8500-940e-11eb-9731-9f40b167aa26.png)
+
 
 
