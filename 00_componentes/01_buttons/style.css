@@ -1,0 +1,106 @@
+/* Variables */
+:root {
+    --color-black: #111;
+    --color-white: #fff;
+    --color-green: #16a085;
+    --color-red: #c82647;
+    --color-orange: #eb9532;
+    --color-purple: #7e3661;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-black);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 1.2rem 2.8rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--color-white);
+}
+
+button:focus {
+    outline: 0; /* Quita la sombra de las esquinas */
+}
+
+.btn-1 {
+    border-color: var(--color-green);
+    transition: box-shadow 0.2s ease-in-out;
+}
+.btn-1:hover {
+    box-shadow: 0 0 40px 40px var(--color-green) inset; /* Sombra hacia adentro*/
+    /* transform: scale(1.1); */
+}
+
+.btn-2 {
+    border-color: var(--color-red);
+    box-shadow: 0 0 40px 40px var(--color-red) inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.btn-2:hover {
+    /* sombra hacia afuera */
+    box-shadow: 0 0 10px 0 var(--color-red) inset, 0 0 10px 4px var(--color-red);
+}
+
+.btn-2 {
+    border-color: var(--color-red);
+    box-shadow: 0 0 40px 40px var(--color-red) inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.btn-2:hover {
+    /* sombra hacia afuera */
+    box-shadow: 0 0 10px 0 var(--color-red) inset, 0 0 10px 4px var(--color-red);
+}
+
+.btn-3 {
+    border-color: var(--color-orange);
+    background-image: linear-gradient(40deg, var(--color-orange) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 0.2s ease-in-out;
+}
+.btn-3:hover {
+    background-position: 0;
+}
+
+.btn-4 {
+    border-color: var(--color-purple);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn-4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background-color: var(--color-purple);
+    z-index: -1;
+    transition: width 0.2s ease-in-out;
+}
+
+.btn-4:hover::after {
+    width: 110%;
+}
+
