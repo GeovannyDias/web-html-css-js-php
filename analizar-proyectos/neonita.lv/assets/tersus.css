@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+/*-----------------------------------------
+===========================================
+  CUSTOM CSS FOR TERSUS TEMPLATE
+===========================================
+-----------------------------------------*/
+
+/*!
+Pin Objects to Top & Hide on Initial Display
+*/
+
+.menuSlideInScroll {
+  top: 0;
+  position: fixed;
+  display: none;
+  }
+
+
+/*!
+WOW Animations position fix for Tersus
+*/
+
+.animated {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  }
+
+
+/*!
+Hover Effects position fix for Tersus
+*/
+
+.hvr-grow, .hvr-shrink, .hvr-float, .hvr-sink, .hvr-pulse, .hvr-pulse-grow, .hvr-pulse-shrink, .hvr-push, .hvr-pop, .hvr-bounce-in, .hvr-bounce-out, .hvr-rotate, .hvr-grow-rotate, .hvr-skew, .hvr-skew-forward, .hvr-skew-backward, .hvr-wobble-skew, .hvr-buzz, .hvr-buzz-out
+  {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+
+  -webkit-transition: .5s;
+  transition: .5s;
+  }
+
+
+/*!
+Animated Hamburger Icon
+*/
+
+.menuIcon-top, .menuIcon-middle-a, .menuIcon-bottom {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease all;
+  -moz-transition: .5s ease all;
+  -o-transition: .5s ease all;
+  transition: .5s ease all;
+  opacity: 1;
+  }
+
+.menuIcon-middle-b {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: .5s ease all;
+  -moz-transition: .5s ease all;
+  -o-transition: .5s ease all;
+  transition: .5s ease all;
+  opacity: 0; 
+  }
+
+.iconTop-click {
+  opacity: 0;
+  -webkit-transform: scale3d(.1, .1, .1);
+  transform: scale3d(.1, .1, .1);
+  }
+
+.iconMiddleA-click {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+
+.iconMiddleB-click {
+  opacity: 1;
+  }
+
+.iconbottom-click {
+  opacity: 0;
+  -webkit-transform: scale3d(.1, .1, .1);
+  transform: scale3d(.1, .1, .1);
+  }
+
+
+/*!
+ Pin Objects to Top
+*/
+
+.menuStickTop {
+  top: 0;
+  position: fixed;
+  }
+
+
+/*!
+ Box to Hide Overflow Content 
+*/
+
+.overflowBox {
+  display: inline-block;
+  overflow: hidden;
+  }
+
+
+/*!
+Top Slide Menu
+*/
+
+.menuTopSlideNav-Btn {
+  cursor: pointer;
+  }
+
+.menuTopSlideNav {
+  -webkit-transition: .8s ease;
+  -moz-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
+  }
+
+.menuTopSlideNav-down {
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+  }
+
+.menuTopSlideNav-up {
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);  
+  }
+
+.menuTopSlideNav-Btn:hover {
+  cursor: pointer;
+  } 
+
+
+/*!
+Side Slide Menu
+*/
+
+.menuSideSlideNavRight {
+  -webkit-transition: .8s ease;
+  -moz-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
+  height: 100% !important;
+  left: 100% !important;
+  }
+
+.menuSideSlideNavLeft {
+  -webkit-transition: .8s ease;
+  -moz-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
+  height: 100% !important;
+  right: 100% !important;
+  }
+
+.menuSideSlideNavPhoneRight, .menuSideSlideNavPhoneLeft { /* For Phone & Tablet Adaptive Version */
+  -webkit-transition: .8s ease;
+  -moz-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
+  height: 100% !important;
+  }
+
+.menuSideSlideNavBG {
+  height: 100% !important;
+  }
+
+.menuSideSlideNav-to-left {
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);  
+  }
+
+.menuSideSlideNav-to-right {
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);  
+  }
+
+.menuSideSlideNav-Btn, .menuSideSlideNav-Close:hover {
+  cursor: pointer;
+  position: fixed;
+  top: 0;  
+
+  cursor: hand; cursor: pointer;
+  }
+
+
+/*!
+Side Menu Scroll Box On Different Viewport Setup
+*/
+
+.menuScrollBox {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  }
+
+.menuScrollBox::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 1px;
+  background-color: #212226;
+  }
+
+.menuScrollBox::-webkit-scrollbar {
+  width: 3px;
+  background-color: #3E4247;
+  }
+
+.menuScrollBox::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+  }
+
+
+/*!
+Portfolio thumbnail zoom effect
+*/
+
+.folioWrapper {
+  display: inline-block;
+  overflow: hidden;
+  }
+
+.folioWrapper:hover .folioImg{
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  transform:scale(1.1);
+  }
+
+.folioImg {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  -webkit-transition: 2s ease all;
+  -moz-transition: 2s ease all;
+  -o-transition: 2s ease all;
+  transition: 2s ease all;
+  }
+
+.folioImg:hover {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  }
