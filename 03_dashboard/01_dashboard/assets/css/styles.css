@@ -1,0 +1,106 @@
+:root {
+  --color-primary: #111b54;
+  --color-light: #ffffff;
+  --color-grey: #efefef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden; /*No se pueda hacer scroll sobre el navbar y sidebar*/
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --------------------------------- Bootstrap class --------------------------------- */
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-light {
+  background-color: var(--color-light) !important;
+}
+
+.btn {
+  border: 0;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+#sidebar-container {
+  min-height: 100vh;
+}
+
+#sidebar-container,
+.logo {
+  padding: 0.875rem 1.25rem;
+}
+
+#sidebar-container,
+.menu {
+  width: 18rem;
+}
+
+.icon-sidebar {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.btn-search {
+  right: 5px;
+}
+
+.avatar {
+  max-width: 35px;
+}
+
+/* CONTENT */
+
+#content {
+  overflow-y: auto; /*En el content si se pude hacer scroll*/
+  height: 100vh;
+  padding-bottom: 5rem;
+}
+
+.border-side {
+  border-right: 1px solid var(--color-grey);
+}
+
+.bg-mix {
+  background: linear-gradient(
+    180deg,
+    var(--color-light) 50%,
+    var(--color-grey) 0
+  );
+}
+
+.bg-grey {
+  background-color: var(--color-grey) !important;
+}
+
+@media (max-width: 768px) {
+  #sidebar-container {
+    display: none;
+  }
+
+  .border-side {
+    border: 0;
+  }
+}
